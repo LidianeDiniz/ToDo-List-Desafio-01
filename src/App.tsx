@@ -1,15 +1,13 @@
-import {Form} from './components/Form';
-import { Header } from './components/Header';
+import './global.css';
+import { Header } from './components/Header'
+import {Task} from './components/Task'
 
-export function App() {
-
+export default function App() {
   return (
-    <div className="App">
-      <Header />
-      <Form/>
-    
-    </div>
+    <div className="main">
+      <Header/>
+      <Task/>
+      </div>
   )
 }
-
 

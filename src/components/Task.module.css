@@ -1,0 +1,136 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .task header {
+    width: 46rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .task header div:first-child span {
+    font-size: 1rem;
+    font-weight: bold;
+  
+    color: var(--blue);
+  }
+  
+  .task header div:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+  
+    color: var(--purple);
+  }
+  
+  .task header div span:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.188rem;
+    border-radius: 5px;
+    color: var(--gray-100);
+    background: var(--gray-400);
+  }
+  
+  .newTask {
+    display: flex;
+    margin-top: -1.875px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newTask input {
+    width: 39.875rem;
+    background: var(--gray-400);
+    border: 0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    
+    transition: outline 0.1s, color 0.1s;
+  }
+  
+  .newTask input:focus-within {
+    outline: 1px solid var(--purple-dark);
+    color: #fff;
+  }
+  
+  .newTask button {
+    padding: 1rem;
+    border: 0;
+    border-radius: 8px;
+    line-height: 0;
+    background: var(--blue-dark);
+    
+    display: flex;
+    align-items: center;
+  
+    cursor: pointer;
+    color:var(--gray-100);
+  }
+  
+  .newTask button:hover {
+    background: var(--blue);
+  }
+  
+  .newTask button svg {
+    margin-left: 0.5rem;
+  }
+  
+  .emptyTask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .emptyTask svg{
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+  
+  .emptyTask span {
+    flex-wrap: wrap;
+    width: 20rem;
+    color: var(--gray-300);
+  }
+  .taskList {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: space-between;
+    background: var(--gray-400);
+    padding: 0.8rem;
+    max-width: 780px;
+    gap: 1rem;
+    border-radius: 8px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .input input {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .input p {
+    color: var(--gray-100);
+    text-align: justify;
+  }
+  
+  .taskList svg {
+    color: var(--gray-300);
+  }
+  
+  .taskList svg:hover {
+    color: var(--danger);
+  }

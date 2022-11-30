@@ -19,7 +19,7 @@
 
 
   --blue: #4EA8DE;
-  --blueDarck: #00B37E;
+  --blue-darck: #00B37E;
 
   --danger: #E25858;
 
@@ -41,3 +41,5 @@ body, input, textarea, button {
   font-weight: 400;
   font-size: 1rem;
 }
+
+

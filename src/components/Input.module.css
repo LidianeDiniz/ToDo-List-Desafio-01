@@ -1,0 +1,57 @@
+.task {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: space-between;
+    background: var(--gray-400);
+    padding: 1rem;
+    max-width: 780px;
+    gap: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .input {
+    display: flex;
+    width: 42rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  
+  .taskNotCompleted {
+    color: var(--gray-100);
+    text-align: justify;
+    font-size: 0.875rem;
+  }
+  
+  .taskCompleted {
+    color: var(--gray-300);
+    text-align: justify;
+    font-size: 0.875rem;
+    text-decoration-line: line-through;
+  }
+  
+  .checkCircle {
+    color: var(--purple);
+    transition: 200ms;
+  }
+  
+  .checkCircle:hover {
+    color: var(--purple-dark);
+  }
+  .check {
+    color: var(--blue);
+    transition: 200ms;
+  }
+  
+  .check:hover {
+    color: var(--blue-dark);
+  }
+  
+  .task svg:last-child {
+    color: var(--gray-300);
+  }
+  
+  .task svg:last-child:hover {
+    color: var(--danger);
+  }
