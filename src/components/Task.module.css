@@ -10,6 +10,7 @@
     width: 46rem;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
+    color: var(--blue);
     
     display: flex;
     justify-content: space-between;
@@ -19,14 +20,16 @@
   .task header div:first-child span {
     font-size: 1rem;
     font-weight: bold;
-  
-    color: var(--blue);
+    background: var(--gray-400);
+    padding: 0.125rem 0.5rem;
+    color: var(--white);
+    border-radius: 999px;
   }
+
   
   .task header div:nth-child(2){
     font-size: 1rem;
     font-weight: bold;
-  
     color: var(--purple);
   }
   
@@ -34,7 +37,9 @@
     font-size: 1rem;
     font-weight: bold;
     padding: 0.188rem;
-    border-radius: 5px;
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+  
     color: var(--gray-100);
     background: var(--gray-400);
   }

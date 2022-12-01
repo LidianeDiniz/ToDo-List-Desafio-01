@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import  { useState } from "react"
 import { Trash, Circle, CheckCircle } from "phosphor-react";
 
 import styles from "./Input.module.css";
@@ -11,7 +11,7 @@ interface TaskProps {
 }
 
 export function Input({ text, completed, onDeleteTask, onChangeTask }: TaskProps) {
-  const [task, setTask] = useState<TaskProps>({ text, completed, onDeleteTask, onChangeTask });
+  const [task] = useState<TaskProps>({ text, completed, onDeleteTask, onChangeTask });
 
   function handleClickCheckBox() {
     completed = !completed;

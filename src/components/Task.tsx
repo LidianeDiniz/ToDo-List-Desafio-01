@@ -64,20 +64,20 @@ export function Task() {
 
       </form>
       <header>
-        <div>
-          <span>{`Tarefas criadas ${tasks.length}`}</span>
+        <div className="taskCounter">
+         <p>Tarefas criadas <span>{tasks.length}</span></p> 
         </div>
         <div>
           <span>Concluídas </span>
-          <span>{`${tasksCompleted} de ${tasks.length}`}</span>
+          <span>{tasksCompleted}</span>
         </div>
       </header>
       {tasks.length === 0 ?
         <div className={styles.emptyTask}>
           <img src={clipboard} alt="Logotipo" />
           <span className="description">
-            Você ainda não tem tarefas cadastradas
-            Crie tarefas e organize seus itens a fazer
+            <p><strong>Você ainda não tem tarefas cadastradas</strong></p>
+             <p>Crie tarefas e organize seus itens a fazer</p> 
           </span>
         </div>
         :
